@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+$primary-color: #029735;
+$inter: "Inter", sans-serif;
+$mulish: "Mulish", sans-serif;
+$primary2-color: rgba(0, 0, 0, 0.4);
+@mixin button {
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  // font-family: 'Inter', sans-serif;
+  font-family: $mulish;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: $primary2-color;
+  align-items: center;
+  padding: 0 3%;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%),
+    linear-gradient(90deg, #08bd46 0.84%, rgba(44, 255, 204, 0) 194.85%);
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.16);
+  height: 59px;
+  @media screen and (min-width: 1000px) {
+    height: 84px;
+  }
+  @media screen and (min-width: 1600px) {
+    padding: 0 20%;
+  }
+  .menu {
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+    i {
+      color: #646765;
+      font-size: 30px;
+    }
+  }
+  span {
+    color: $primary-color;
+    font-family: $inter;
+    font-size: 22px;
+    font-weight: 600;
+    display: none;
+    @media screen and (min-width: 1000px) {
+      display: block;
+    }
+  }
+  img {
+    width: 54px;
+    @media screen and (min-width: 1000px) {
+      width: 72px;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .desktopMenu {
+    display: none;
+    list-style: none;
+    gap: 46px;
+    align-items: center;
+    @media screen and (min-width: 1000px) {
+      display: flex;
+    }
+    a {
+      color: $primary-color;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .login {
+      background-color: $primary-color;
+      @include button;
+
+      color: white;
+    }
+  }
+  #mobile {
+    background-color: $primary-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 4rem;
+    div {
+      display: flex;
+      justify-content: end;
+      font-size: 20px;
+      color: #fff;
+    }
+    ul {
+      list-style: none;
+      font-family: $mulish;
+      font-size: 18px;
+      font-weight: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.firstSection {
+  @media screen and (min-width:1000px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  padding-top: 100px;
+  div:first-child {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+  div:nth-child(2) {
+    height: 22px;
+    background-color: $primary-color;
+  }
+  div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 29px;
+    @media  screen and (min-width:1000px) 
+    {
+     text-align: left;
+     
+     align-items: start; 
+     justify-content: start;
+     
+    }
+    h1 {
+      color: $primary-color;
+      text-align: center;
+      font-family: $inter;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 110.023%;
+      padding-bottom: 29px;
+      @media  screen and (min-width:1000px){
+        width: 565px;
+        font-size: 66px;
+        
+      }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      font-family: $mulish;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.12px;
+      padding-bottom: 20px;
+      width: 289px;
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 33px;
+      padding-top: 0;
+      padding: 26px;
+      button:first-child{
+        background-color: $primary-color;
+      }
+      button{
+        @include button;
+        color: #fff;
+      }
+      button:nth-child(2) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        background-color: black;
+      }
+    }
+  }
+}
+.secondSection{
+   background-color: #eee;
+   height: 70vh;
+   div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    @media screen and (min-width:1000px) {
+      gap: 6px;
+    }
+    div{
+      background-color: $primary-color;
+     height: 1px;
+     width: 48px;
+     margin-top: 15px;
+     @media screen and (min-width:1000px) {
+      width: 143px;
+     }
+    }
+   }
+   div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   }
+  h2{
+    color:$primary-color;
+    font-family: $mulish;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+    @media screen and (min-width:1000px) {
+font-family: $inter;
+font-size: 40px;
+line-height: 110.023%;
+    }
+  }
+  div:nth-child(2){
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+  }
+  // div:nth-child(3){
+  //   display: flex;
+  //   align-items: center;
+  //   flex-direction: row;
+  // }
+}
+#worker{
+// box-shadow: 0px 11px 12px 0px rgba(0, 0, 0, 0.16);
+width: 100%;
+display: block;
+height: 100vh;
+box-shadow: rgba(0, 0, 0, 0.16);
+}
+#aboutUs{
+  background: #FFF;
+  h3{
+    color: $primary-color;
+font-family: $mulish;
+font-size: 18px;
+font-weight: 600;
+text-align: center;
+padding-top: 35px;
+padding-bottom: 35px;
+  }
+  p{
+    padding: 0 20px;
+    color: rgba(0, 0, 0, 0.50);
+text-align: justify;
+font-family: $mulish;
+font-size: 12px;
+font-weight: 400;
+// line-height: 140%;
+letter-spacing: -0.16px;
+  }
+  button{
+    @include button;
+    background-color: $primary-color;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      
+  }
+}
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Css</title>
+    <link rel="stylesheet" href="sass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#"
+        ><img src="asset/logo.png" alt="logo" /><span>Wastexpert</span></a
+      >
+      <ul class="desktopMenu">
+        <li><a href="#About">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#" class="login">Login</a></li>
+      </ul>
+      <!-- <i onclick="hideMenu()" class="fa fa-times"></i> -->
+      <div onclick="showMenu()" class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- mobile navigation -->
+      <div id="mobile">
+        <div onclick="hideMenu()"><i class="fa fa-times"></i></div>
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#" class="login">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="firstSection">
+      <div>
+        <img src="asset/Group 1.png" alt="trashGuy" />
+      </div>
+      <div></div>
+      <div class="waste">
+        <h1>Waste to Wealth just got better</h1>
+        <p>
+          The Waste to Wealth Mission brings scientific processing of waste to
+          the forefront to build a zero landfill and zero waste nation.
+        </p>
+        <div class="btns">
+          <button class="getStarted">Get Started</button>
+          <button class="play">
+            <img src="asset/play 1 (Traced).png" alt="logo" />Press play
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="secondSection">
+      <div>
+        <h2>Partners</h2>
+        <div></div>
+      </div>
+      <div>
+        <img src="asset/cola.png" alt="cola" />
+        <img src="asset/jaiz.png" alt="jaiz" />
+        <img src="asset/access.png" alt="access" />
+        <img src="asset/tobacco.png" alt="tobacco" />
+        <img src="asset/nestle.png" alt="nestle" />
+        <img src="asset/uba.png" alt="uba" />
+        <img src="asset/ogun state.png" alt="ogunState" />
+        <img src="asset/bewry.jpeg" alt="bewrie" />
+      </div>
+    </section>
+    <section id="workers">
+      <img src="asset/workers.jpeg" alt="workers " />
+      <!-- </section>
+    <section id="aboutUs"> -->
+      <div>
+        <h3>About Us</h3>
+        <p>
+          tincidunt urna non, lobortis tincidunt. Faucibus felis nulla faucibus
+          tellus nunc. Platea risus nibh feugiat dui phasellus phasellus viverra
+          ac leo. Pellentesque venenatis, ut risus at. dolor sit amet,
+          consectetur adipiscing elit. Vitae,
+        </p>
+        <button>Read More</button>
+      </div>
+    </section>
+    <script src="style.js"></script>
+  </body>
+</html>

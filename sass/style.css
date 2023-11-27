@@ -214,13 +214,13 @@ nav #mobile ul a {
 
 .secondSection {
   background-color: #eee;
-  height: 70vh;
 }
 .secondSection div:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 1000px) {
   .secondSection div:first-child {
@@ -231,7 +231,7 @@ nav #mobile ul a {
   background-color: #029735;
   height: 1px;
   width: 48px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 1000px) {
   .secondSection div:first-child div {
@@ -250,7 +250,6 @@ nav #mobile ul a {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  padding-top: 10px;
 }
 @media screen and (min-width: 1000px) {
   .secondSection h2 {
@@ -263,46 +262,129 @@ nav #mobile ul a {
   display: flex;
   align-items: center;
 }
-
-#worker {
-  width: 100%;
-  display: block;
-  height: 100vh;
-  box-shadow: rgba(0, 0, 0, 0.16);
+.secondSection .sponsors {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#aboutUs {
-  background: #FFF;
+#workers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#aboutUs h3 {
+#workers h3 {
   color: #029735;
   font-family: "Mulish", sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 600;
   text-align: center;
-  padding-top: 35px;
-  padding-bottom: 35px;
 }
-#aboutUs p {
-  padding: 0 20px;
+#workers p {
   color: rgba(0, 0, 0, 0.5);
+  width: 359px;
+  height: 104px;
   text-align: justify;
   font-family: "Mulish", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 140%;
   letter-spacing: -0.16px;
+  margin-top: 15px;
+  padding-left: 34px;
+  padding-right: 35px;
 }
-#aboutUs button {
+#workers .line {
+  background-color: #029735;
+  height: 1px;
+  width: 48px;
+  margin-top: 15px;
+}
+#workers div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+#workers a {
+  background-color: #029735;
   width: 140px;
   height: 40px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
+  color: #fff;
+  padding: 10px 28px;
+  margin-top: 60px;
+  margin-bottom: 52px;
+}
+
+form {
+  width: 428px;
+  height: 1072px;
   background-color: #029735;
-  color: white;
+}
+form h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.25px;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+form h2 {
+  text-align: center;
+  color: #029735;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -0.18px;
+  padding-left: 54px;
+  padding-right: 67px;
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+form .whiteBg {
+  border-radius: 8px;
+  background-color: #fff;
+  width: 390px;
+  height: 376px;
+  margin-left: 19px;
+}
+form img {
+  width: 10px;
+  height: 10px;
+  margin-left: 11px;
+}
+form .dotSignUp {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  gap: 3px;
+}
+form .dotSignUp p {
+  color: #000;
+  font-family: #029735;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 110.023%;
+  padding-left: 3px;
+  padding-right: 12px;
+}
+form .dotAll {
+  display: flex;
+  align-items: center;
+}
+form .dotAll p {
+  color: #000;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.15px;
+  padding-left: 15px;
 }/*# sourceMappingURL=style.css.map */
